@@ -8,6 +8,9 @@
 #table-filter{
   margin-left:2vw;
 }
+#gray{
+  background-color: #658585;
+}
 footer{
   display:none;
   position:absolute;
