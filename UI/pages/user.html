@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link href="../styling/styles.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>||FREE MENTORS</title>
+    <style>
+#mentor-id{
+  position:relative;
+  background-color: #efefef;
+  z-index:-3;
+}
+.it-mentors{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1.5fr);
+  grid-gap: 20px;
+  margin: 20px 0;
+}
+ .it-mentors img{
+  width: 200px;
+  height: auto;
+  margin:0 auto;
+  border: 4px solid rgb(228, 173, 21);  
+}
+.it-mentors .it{
+  background: white;
+  padding: 20px;
+  box-shadow: 1px 1px 5px gray;
+  border-radius: 6px;
+}
+.it-mentors .it p{
+  margin-left: 6px;
+}
+.it-mentors .it a button{
+  margin-left: 60px;
+  padding: 6px;
+  border: 1px solid #efefef;
+  border-radius: 5px;
+  color: black;
+  background: #6367e278;
+
+}
+.it-mentors .it a button:hover{
+  cursor: pointer;
+  background: #0da3d6;
+  color: white;
+  transition: all .4s ease-in-out;
+}
+
+@media (max-width:1024px){
+  .mentors h2,h3{
+    font-size: 30px;
+  }
+  .it-mentors{
+    grid-template-columns: repeat(3,2fr); 
+  }
+}
+@media (max-width: 770px){
+  .it-mentors{
+    grid-template-columns: repeat(2,1fr); 
+  }
+  .it-mentors> .it img{
+    width: 90%;
+    margin: 0;
+  }
+}
+@media (max-width:430px){
+  .menu{
+    display: block;
+  }
+  .links ul{
+    display: none;
+  }
+ 
+  
+  .it-mentors{
+    grid-template-columns: repeat(1,2fr);
+  }
+}
+@media (max-width: 378px){
+  .header .title{
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+  .header a button{
+    margin: 50px 20px 0 35%;
+  }
+  .it-mentors .it a button{
+    margin-left: 55px;
+  }
+}
+@media (max-width: 320px){
+  .header .title{
+    font-size: 20px;
+    letter-spacing: 2px;
+    transform: translateY(780%);
+  }
+  .header .slogan{
+    font-size: 18px;
+    letter-spacing: 2px;
+    transform: translateY(850%);
+  }
+  .header a button{
+    margin-left: 30%;
+  }
+  .it-mentors .it a button{
+    font-size: 12px;
+    margin-left: 20%;
+  }
+}
+
+
+   
+    </style>
+</head>
+<body id="mentor-id" >
+    <nav>
+        <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+
+            </div>
+        <div>
+           <span id="logo">Free mentors</span>
+        </div>
+        <div class="screen"></div>
+          <ul class="nav-links">
+                       <li><a href="../index.html">home</a></li>                   
+                       <li><a href="login.html">logout</a></li>
+                       <li><a href="about.html">about</a></li>
+                       <li><a href="contact.html">contact</a></li>
+                 </ul>
+</nav>
+<div class="separator"></div>
+<div class="user-profile to-center">
+  <img class="avatar" src="../imgs/doctor.jpg"alt="Ash" />
+    <div class="username">nshuti manzi</div>
+  <div class="bio">
+  	Senior UI Designer
+  </div>
+  <div class="update to-center"><a href="#">UPDATE PROFILE</a></div>
+</div>
+  
+
+</div>
+
+
+
+<section class="user-table-wrapper1">
+  <div class="wrapper">
+  <div class="it-mentors">
+    <div class="it to-center">
+        <img src="../imgs/women.jpg" alt="">
+        <p><b>Will Make</b></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, facilis?</p>
+        <a href="modetail.html"><button>View Mentor details</button></a>
+    </div>
+    <div class="it to-center">
+      <img src="../imgs/women.jpg" alt="">
+      <p><b>Will Make</b></p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, facilis?</p>
+      <a href="./pages/specific-mentor.html"><button>View Mentor details</button></a>
+  </div>
+ 
+  <div class="it to-center">
+    <img src="../imgs/women.jpg" alt="">
+    <p><b>Will Make</b></p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, facilis?</p>
+    <a href="./pages/specific-mentor.html"><button>View Mentor details</button></a>
+   </div>
+   <div class="it to-center">
+    <img src="../imgs/man.jpg" alt="">
+    <p><b>Will Make</b></p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, facilis?</p>
+    <a href="./pages/specific-mentor.html"><button>View Mentor details</button></a>
+   </div>
+   <div class="it to-center">
+    <img src="../imgs/man.jpg" alt="">
+    <p><b>Will Make</b></p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, facilis?</p>
+    <a href="./pages/specific-mentor.html"><button>View Mentor details</button></a>
+</div>
+
+<div class="it to-center">
+  <img src="../imgs/man.jpg" alt="">
+  <p><b>Will Make</b></p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, facilis?</p>
+  <a href="./pages/specific-mentor.html"><button>View Mentor details</button></a>
+ </div>
+
+</div>
+</div>
+
+
+</div, initial-scale=1.0">
+</section>
+
+
+
+
+
+
+<script src="../script/scrpit.js"></script>
+</body>
+</html>
