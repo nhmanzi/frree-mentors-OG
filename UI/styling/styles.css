@@ -11,20 +11,54 @@
 #gray{
   background-color: #658585;
 }
-footer{
-  display:none;
-  position:absolute;
-  bottom:0;
-  width: 100%;
+.to-blue{
   
+  color:white;
+  font-weight: bold;
+  border-bottom: 2px solid rgb(139, 136, 136);
+}
+footer{
+  
+  width: 100%;
+  height:25px;
+  margin-bottom:0px;
+  text-align: center;
+  background-color: rgb(205, 206, 207);
+  color:rgb(15, 107, 143);
+}
+.separate{
+  z-index:1;
+  height:2vh;
+}
+.separate5{
+  z-index:1;
+  height:37vh;
+}
+.separate4{
+  z-index:1;
+  height:3vh;
+}
+.separate1{
+  z-index:1;
+  height:33vh;
+}
+.separate2{
+  z-index:1;
+  height:33vh;
+}
+.separate3{
+  z-index:1;
+  height:22vh;
 }
 .user-profile {
+    position:fixed;
     width: 25vw;
     height:100vh;
     background:#2A363F;
     box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   .user-profile2 {
+    position:static;
     width: 100vw;
     height:48vh;
     background:#efefef;
@@ -53,7 +87,7 @@ footer{
     display: inline-block;
 
     margin-bottom:1.5rem;
-    color: #e76043;
+    color: whitesmoke;
     font-size: .87em;
       
   }
@@ -69,6 +103,7 @@ footer{
   .update a{
     color:#efefef;
     padding:.3rem;
+    border-radius:3px;
     margin-top:5px;
     background-color:#0da3d6;
     box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -190,7 +225,7 @@ html{
 }
 body{
   
-  background-color: #2A363F;
+  background-color: #efefef;
   
   width: 100vw;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -200,12 +235,7 @@ body{
   height: auto;
 
 }
-footer{
- 
- text-align: center;
-  background-color: rgb(205, 206, 207);
-  color:rgb(6, 80, 55);
-}
+
  a{
     text-decoration: none;
 
@@ -246,7 +276,7 @@ nav{
  }
 
  .nav-links li a{
-    color: #6D7781;
+    color: white;
     font-size:14px;
     text-transform: capitalize;
      padding: 10px 30px;
@@ -256,7 +286,7 @@ nav{
 
      background-color:rgba(0, 0, 0, 0.5);
      color:whitesmoke;
-     border-bottom: 2px solid rgb(139, 136, 136);
+     
 
 
  }
@@ -329,7 +359,6 @@ nav{
 }
 .signup a:hover{
 background:#0da3d6;
-opacity: .5;
 border:transparent;
 }
 .index-banner2{
@@ -349,7 +378,7 @@ border:transparent;
 
 }
 .section2 h1{
-  color:rgb(202, 198, 198);
+  color:rgb(0, 0, 0);
   margin:4px auto;
   text-align: center;
 }
@@ -357,7 +386,7 @@ border:transparent;
   margin:4px auto;
   width: 50%;
   text-align: left;
-  color:rgb(238, 231, 231);
+  color:#111;
   padding: 0px 5px;
 }
 
@@ -370,21 +399,21 @@ width:25vw;
 
 /* login page*/
 #login-page{
-  background: #2A363F;
+  background: #efefef;
   font-family: 'Open Sans', sans-serif;
   height:auto;
 }
 .login{
     text-align: center;
-    padding:8vw 0px;
+    padding:1vh 0px;
     margin:10vh auto;
-    height:72vh;
-    width:100vw;
-    background-color:#2A363F;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, .5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    background-color:white;
 }
 
 .login h2{
-  color: whitesmoke;
+  color: #111;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   letter-spacing: 2px;
   font-size: 15px;
   font-weight: bold;
@@ -399,37 +428,37 @@ button{
     margin:4vh;
 }
 
-#login-btn a{
-    color:#efefef;
-    text-transform: uppercase;
-    letter-spacing:2px;
-    border-radius:4px;
-    padding:2vh 10vw;
-    background-color: #0da3d6;
-
-}
 #login-btn a:hover{
-
   background-color:#6D7781;
-
 }
-
+#login-btn a{
+  border-radius:4px;
+  background-color: #0da3d6;
+  margin-top:5px;
+  padding:10px 8vw;
+  width:100%;
+  
+  color:#efefef;
+  text-transform: uppercase;
+  letter-spacing:2px;
+}
 .login input[type="text"], [type="password"] {
   
-    padding: 20px 10px;
-    background: transparent;
-    border: 0;
-    width:60%;
-    border: 1px solid #435160;
-    width: 80%;
-    color: rgb(143, 140, 140);
+  width: 100%; /* Full width */
+  padding:8px; /* Some padding */
+  margin:5px auto;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  background:transparent;
+    border: 1px solid rgb(90, 89, 89);
+    color:rgb(49, 49, 49);
     font-size: 16px;
-    border-radius: 4px;
-    box-sizing: border-box;
 }
 #sgup a{
      padding-left: 10px;
      color:#0da3d6;
+     text-decoration: underline;
  }
  #sgup a:hover{
   color:#6D7781;
@@ -445,96 +474,97 @@ button{
 /* contact page*/
 
 .contact-page{
-  background-color: #2A363F;
+  background-color: #efefef;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   height:100vh;
   width: 100vw;
 }
 .form-area{
-  width: 100vw;
-  text-align: center;
+  position: relative;
+  top:10vh;
+  z-index:-2;
+  background-color: white;
+  margin:0 auto;
+  width: 50vw;
+  height:65vh;
+  display:flex;
+  flex-direction: row-reverse;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 .form-area h1{
   padding:10px;
-  color:whitesmoke;
+  color:#111;
   font-size:1.8rem;
-
+  margin-left:-12px;
+  margin-top:10px;
 }
-.contact input[type=text], select, textarea {
-  width: 80%; /* Full width */
-  padding:10px 10%; /* Some padding */
-  margin:10px auto;
+.form-area div{
+width:23vw;
+}
 
+.fields input[type=text], select, textarea {
+  width:20vw; /* Full width */
+  padding:5px; /* Some padding */
+  margin:10px auto;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   background:transparent;
-    border: 1px solid #435160;
-    color: rgb(143, 140, 140);
+    border: 1px solid rgb(90, 89, 89);
+    color:rgb(49, 49, 49);
     font-size: 16px;
 }
-.contact textarea:hover,input[type=text]:hover, select:hover {
+.fields textarea{
+  width: 20vw; /* Full width */
+  padding:5px; /* Some padding */
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  background:transparent;
+    border: 1px solid rgb(90, 89, 89);
+    color:rgb(49, 49, 49);
+    font-size: 16px; 
+}
+.fields textarea:hover,input[type=text]:hover, select:hover {
  border: 1px solid  #0da3d6;
 }
 /* Style the submit button with a specific background color etc */
-.contact input[type=submit] {
+.fields input[type=submit] {
   background-color: #0da3d6;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin-top:4vh;
-  margin-left:auto;
-  margin-right:auto;
+
+
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
-.contact input[type=submit]:hover {
-  background-color: #0da3d6;
+.fields input[type=submit]:hover {
+  background-color: #b7bfc2;
 }
 
-/* Add a background color and some padding around the form */
-.contact {
-  width: 80vw;
-  margin:10vh auto;
-  padding:40px 0px;
- display: flex;
- flex-direction: row;
-
-background-color:#2A363F;
-
-
+.information h2{
+ margin-top:20vh;
+ font-size:15px;
 }
-.contact div{
-  padding:0px 4vw;
-  width: 40vw;
-  height: 70vh;
-}
-.logo2 p{
-  position:relative;
-  left:1vw;
-  top:26vh;
-  color:whitesmoke;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size:30px;
-}
-.logo2{
-  border-right: 1px solid #435160;
-}
-
+.information p{
+  font-size:15px;
+ }
+ .information a{
+   color:#0da3d6;
+   text-decoration: underline;
+ }
 /* //////////////////////////////////////// end of contact////////////////////////////////////////////////////////////*/
 
 /*about us*/
 #about-page{
-  height:100vh;
-  background-color: #2A363F;
+  overflow-y: hidden;
+  background-color: #efefef;
 }
 
-.rect-main{
-  width:100%;
-  height:5vh;
-  background-color: rgb(25, 25, 26);
-}
+
 .rectangles{
   display: grid;
   grid-template-columns:repeat(4,2.5fr);
@@ -561,7 +591,7 @@ background-color:#2A363F;
   max-width: 100vw;
 }
 .separator-2{
-  height: 10vh;
+  height: 5vh;
 }
 .contents1 h1{
  
@@ -570,12 +600,12 @@ background-color:#2A363F;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size:3rem;
   text-transform: uppercase;
-  color:rgb(216, 208, 208);
+  color:#111;
 }
  .about p{
-   width: 70vw;
+   width: 40vw;
    margin:4vh auto;
-   color:#efefef;
+   color:#111;
  }
  /* //////////////////////////////////////// end of about us////////////////////////////////////////////////////////////*/
 
@@ -583,38 +613,35 @@ background-color:#2A363F;
 
 /*more details*/
 .details-mentor {
-  width: 60vw;
+ 
+  width: 50vw;
   height:auto;
   margin:10vh auto;
  display: flex;
  flex-direction: row;
-
-background-color:#222;
-
-
 }
 
 .details-mentor div{
   padding:0px 1vw;
-  width: 30vw;
-  height: 50vh;
+  width: 25vw;
+  height: auto;
 }
 .photo> img{
   margin-top:2vh;
   border-radius: 50%;
-  left:5%;
+  left:10%;
   height: 200px;
   width: 200px;
- object-fit: scale-down;
 }
 
 .photo{
+
   background-color: #efefef;
 }
-
-.details-mentor  img:hover {
-   border-radius:0%;
+.card_content{
+  margin-left:-20px;
 }
+
 
 .details-mentor .card_content {
   background:#efefef;
@@ -636,19 +663,24 @@ background-color:#222;
   color: #111;
   font-size: 0.875rem;
   line-height: 1.5;
-  margin-bottom: .5rem;
   font-weight: 400;
   text-align: left;
+  margin-bottom:4px;
 }
-
-.details-mentor button{
+.btn{
+  margin-top:20px;
+  margin-left:-10px;
+}
+.btn >a{
+  margin-top:10px;
   background-color:#0da3d6;
   color:whitesmoke;
-  border:none;
+  padding:10px;
+  border-radius:4px;
+  cursor:pointer;
 }
-.details-mentor button:hover{
-  background-color: #0da3d6;
-
+.btn >a:hover{
+  background-color: #0981a8;
 }
 h1, h3{
   text-transform: uppercase;
@@ -679,32 +711,33 @@ background-color: #0da3d6;
 }
 .signup-title label{
   font-size:1.5rem;
-  color:white;
+  color:#111;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .box {
-  margin-top: .5rem;
+  margin-top: 1.3rem;
   padding: .6rem 1rem;
   margin-bottom: 1rem;
-  background-color: #2A363F;
-  width: 40vw;
+  background-color: white;
+  width: 25vw;
   margin-left: auto;
   margin-right:auto;
-
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 .main-sign{
   width:100vw;
   height:100vh;
 }
 .box input[type=text], .box input[type=email],.box input[type=password] ,.box textarea {
-  width: 80%; /* Full width */
+  width: 100%; /* Full width */
   padding:5px; /* Some padding */
   margin:10px auto;
-
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   background:transparent;
-    border: 1px solid #435160;
-    color: rgb(143, 140, 140);
+    border: 1px solid rgb(90, 89, 89);
+    color:rgb(49, 49, 49);
     font-size: 16px;
 }
 .box textarea:hover,.box input[type=text]:hover ,.box input[type=password]:hover ,.box input[type=email]:hover{
@@ -721,7 +754,7 @@ background-color: #0da3d6;
 }
 .btn-sgn{
   background-color: #0da3d6;
-  color: white;
+  width:100%;
   padding: 12px;
   border: none;
   border-radius: 4px;
@@ -729,6 +762,14 @@ background-color: #0da3d6;
   margin-left:auto;
   margin-right:auto;
   margin-bottom: 1.2rem;
+}
+.btn-sgn a{
+  color:#efefef;
+  text-transform:uppercase; 
+}
+.user > span{
+  margin:30px;
+  color:#111;
 }
 
  /* //////////////////////////////////////// media queries////////////////////////////////////////////////////////////*/
@@ -745,6 +786,9 @@ background-color: #0da3d6;
     font-size:1.2rem;
     margin-left:15%;
 
+  }
+  .to-blue{
+    display:none;
   }
   .index-banner p{
     width:50%;
@@ -764,12 +808,22 @@ background-color: #0da3d6;
 
   }
   /* queries for login page*/
-  .login{
-    margin:7vh auto;
-    padding:20vw 0px;
-    background-color:#2A363F;
-}
-/* queries for about page*/
+  #login-page{
+    background:white;
+    
+  }
+  .login{ 
+      margin:15vh auto;
+      box-shadow:none;
+  }
+
+  #login-btn a{
+    
+    margin-top:5px;
+    padding:10px 32vw; 
+  }
+  
+ /* queries for about page*/
 .contents1 h1{
   position: relative;
   top:5vh;
@@ -853,6 +907,80 @@ background-color: #0da3d6;
 }
 
 
+.form-area{
+  position: relative;
+  top:5vh;
+  background-color: white;
+  margin:0 auto;
+  width: 100vw;
+  height:auto;
+  display:flex;
+  flex-direction: column-reverse;
+  box-shadow:none;
+}
+
+.form-area div{
+width:100vw;
+}
+
+.fields input[type=text], select, textarea {
+  width:80vw; /* Full width */
+  padding:5px; /* Some padding */
+  margin:10px auto;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  background:transparent;
+    border: 1px solid rgb(90, 89, 89);
+    color:rgb(49, 49, 49);
+    font-size: 16px;
+}
+.fields textarea{
+  width: 80vw; /* Full width */
+  padding:5px; /* Some padding */
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  background:transparent;
+    border: 1px solid rgb(90, 89, 89);
+    color:rgb(49, 49, 49);
+    font-size: 16px; 
+}
+.fields textarea:hover,input[type=text]:hover, select:hover {
+ border: 1px solid  #0da3d6;
+}
+/* Style the submit button with a specific background color etc */
+.fields input[type=submit] {
+  background-color: #0da3d6;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.fields{
+  padding: 0 10vw;
+}
+.information{
+  padding: 0 10vw;
+}
+/* When moving the mouse over the submit button, add a darker green color */
+.fields input[type=submit]:hover {
+  background-color: #b7bfc2;
+}
+
+.information h2{
+ margin-top:20vh;
+ font-size:20px;
+}
+.information p{
+  font-size:20px;
+ }
+ .information a{
+   color:#0da3d6;
+   text-decoration: underline;
+ }
+
 
 }
 
@@ -868,6 +996,7 @@ background-color: #0da3d6;
     margin-left:15%;
 
   }
+  
   .index-banner p{
     width:50%;
     margin-left:25%;
@@ -960,6 +1089,102 @@ background-color: #0da3d6;
   background-color: #6ED9A0;
 
 }
+#login-page{
+  background:white;
+  ;
+}
+.login{
+   
+    margin:15vh auto;
+    box-shadow:none;
+ 
+}
+
+
+#login-btn a{
+  border-radius:4px;
+  background-color: #0da3d6;
+  margin-top:5px;
+  padding:10px 27vw;
+
+}
+.form-area{
+  position: relative;
+  top:5vh;
+  background-color: white;
+  margin:0 auto;
+  width: 100vw;
+  height:auto;
+  display:flex;
+  flex-direction: column-reverse;
+  box-shadow:none;
+}
+
+.form-area div{
+width:100vw;
+}
+
+.fields input[type=text], select, textarea {
+  width:80vw; /* Full width */
+  padding:5px; /* Some padding */
+  margin:10px auto;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  background:transparent;
+    border: 1px solid rgb(90, 89, 89);
+    color:rgb(49, 49, 49);
+    font-size: 16px;
+}
+.fields textarea{
+  width: 80vw; /* Full width */
+  padding:5px; /* Some padding */
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  background:transparent;
+    border: 1px solid rgb(90, 89, 89);
+    color:rgb(49, 49, 49);
+    font-size: 16px; 
+}
+.fields textarea:hover,input[type=text]:hover, select:hover {
+ border: 1px solid  #0da3d6;
+}
+/* Style the submit button with a specific background color etc */
+.fields input[type=submit] {
+  background-color: #0da3d6;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.fields{
+  padding: 0 10vw;
+}
+.information{
+  padding: 0 10vw;
+}
+/* When moving the mouse over the submit button, add a darker green color */
+.fields input[type=submit]:hover {
+  background-color: #b7bfc2;
+}
+
+.information h2{
+ margin-top:20vh;
+ font-size:20px;
+}
+.information p{
+  font-size:20px;
+ }
+ .information a{
+   color:#0da3d6;
+   text-decoration: underline;
+ }
+
+
+
+
 
  }
 
@@ -1077,6 +1302,7 @@ width: 100%;
   border-right: none;
 }
 .user-profile {
+  position:static;
   margin-top:0vh;
   width: 100vw;
   height:40vh;
@@ -1146,11 +1372,11 @@ td{
   margin-top: .5rem;
   padding: .6rem 1rem;
   margin-bottom: 1rem;
-  background-color: #2A363F;
+  background-color: #efefef;
   width: 100vw;
   margin-left: auto;
   margin-right:auto;
-
+ 
 }
 .separator-1{
   height:8vh;
@@ -1168,7 +1394,134 @@ td{
    border:2px solid wheat;
  }
  .section2 h1{
-  color:rgb(202, 198, 198);}
+  color:rgb(0, 0, 0);}
+/* login page*/
+#login-page{
+  background: white;
+ 
+}
+.login{
+    text-align: center;
+    padding:1vh 0px;
+    margin:18vh auto;
+    box-shadow:none;
+    background-color:white;
+}
+#login-btn a{
+  
+  padding:10px 27vw
+}
+
+form{
+  height:auto;
+}
+.login input[type="text"], [type="password"] {
+  
+  width: 70%; /* Full width */
+
+}
+.form-area{
+  position: relative;
+  top:5vh;
+  background-color: white;
+  margin:0 auto;
+  width: 100vw;
+  height:auto;
+  display:flex;
+  flex-direction: column-reverse;
+  box-shadow:none;
+}
+
+.form-area div{
+width:100vw;
+}
+
+.fields input[type=text], select, textarea {
+  width:80vw; /* Full width */
+  padding:5px; /* Some padding */
+  margin:10px auto;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  background:transparent;
+    border: 1px solid rgb(90, 89, 89);
+    color:rgb(49, 49, 49);
+    font-size: 16px;
+}
+.fields textarea{
+  width: 80vw; /* Full width */
+  padding:5px; /* Some padding */
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  background:transparent;
+    border: 1px solid rgb(90, 89, 89);
+    color:rgb(49, 49, 49);
+    font-size: 16px; 
+}
+.fields textarea:hover,input[type=text]:hover, select:hover {
+ border: 1px solid  #0da3d6;
+}
+/* Style the submit button with a specific background color etc */
+.fields input[type=submit] {
+  background-color: #0da3d6;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.fields{
+  padding: 0 10vw;
+}
+.information{
+  padding: 0 10vw;
+}
+/* When moving the mouse over the submit button, add a darker green color */
+.fields input[type=submit]:hover {
+  background-color: #b7bfc2;
+}
+
+.information h2{
+ margin-top:20vh;
+ font-size:20px;
+}
+.information p{
+  font-size:20px;
+ }
+ .information a{
+   color:#0da3d6;
+   text-decoration: underline;
+ }
+
+
+
+}
+
+@media only screen and (min-width:769px)and (max-width:799px){
+  #login-page{
+    background:white;
+    ;
+  }
+  .login{
+     
+      margin:24vh auto;
+      box-shadow:none;
+   
+  }
+  .login input[type="text"], [type="password"] {
+  
+    width: 70%; /* Full width */
+  
+  }
+  
+  #login-btn a{
+    border-radius:4px;
+    background-color: #0da3d6;
+    margin-top:5px;
+    padding:10px 29vw;
+  
+  }
 }
 /*from small lapttops t0 large screens*/
 @media only screen and (min-width:800px){
@@ -1178,9 +1531,229 @@ td{
     padding:8vw 0px;
     margin:8vh auto;
     height:72vh;
-    width:50vw;
-    background-color:#2A363F;
+    width:25vw;
+    background-color:white;
 }
+#login-page{
+  background: #efefef;
+  font-family: 'Open Sans', sans-serif;
+  height:auto;
+}
+.login{
+    text-align: center;
+    padding:1vh 0px;
+    margin:10vh auto;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, .5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    background-color:white;
+}
+
+.login h2{
+  color: #111;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 2px;
+  font-size: 15px;
+  font-weight: bold;
+  font-size: 2.6rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+button{
+  border-radius:2px;
+}
+.login form div{
+    margin:4vh;
+}
+
+#login-btn a:hover{
+  background-color:#6D7781;
+}
+#login-btn a{
+  border-radius:4px;
+  background-color: #0da3d6;
+  margin-top:5px;
+  padding:10px 8vw;
+  width:100%;
+  
+  color:#efefef;
+  text-transform: uppercase;
+  letter-spacing:2px;
+}
+.login input[type="text"], [type="password"] {
+  
+  width: 100%; /* Full width */
+  padding:8px; /* Some padding */
+  margin:5px auto;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  background:transparent;
+    border: 1px solid rgb(90, 89, 89);
+    color:rgb(49, 49, 49);
+    font-size: 16px;
+}
+#sgup a{
+     padding-left: 10px;
+     color:#0da3d6;
+     text-decoration: underline;
+ }
+ #sgup a:hover{
+  color:#6D7781;
+ }
+ .login input[type=text]:hover,input[type="password"]:hover {
+  border: 1px solid #0da3d6;
+}
+
+}
+@media only screen and (min-width:800px)and (max-width:1050px){
+  .login{
+    text-align: center;
+    padding:8vw 0px;
+    margin:8vh auto;
+    height:72vh;
+    width:25vw;
+    background-color:white;
+}
+#login-page{
+  background: #efefef;
+  font-family: 'Open Sans', sans-serif;
+  height:auto;
+}
+.login{
+    text-align: center;
+    width:60vw;
+    padding:10vh 0px;
+    margin:10vh auto;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, .5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    background-color:white;
+}
+
+.login h2{
+  color: #111;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 2px;
+  font-size: 15px;
+  font-weight: bold;
+  font-size: 2.6rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+button{
+  border-radius:2px;
+}
+.login form div{
+    margin:4vh;
+}
+
+#login-btn a:hover{
+  background-color:#6D7781;
+}
+#login-btn a{
+  border-radius:4px;
+  background-color: #0da3d6;
+  margin-top:5px;
+  padding:10px 23vw;
+  width:100%;
+  
+  color:#efefef;
+  text-transform: uppercase;
+  letter-spacing:2px;
+}
+.login input[type="text"], [type="password"] {
+  
+  width: 100%; /* Full width */
+  padding:8px; /* Some padding */
+  margin:5px auto;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  background:transparent;
+    border: 1px solid rgb(90, 89, 89);
+    color:rgb(49, 49, 49);
+    font-size: 16px;
+}
+#sgup a{
+     padding-left: 10px;
+     color:#0da3d6;
+     text-decoration: underline;
+ }
+ #sgup a:hover{
+  color:#6D7781;
+ }
+ .login input[type=text]:hover,input[type="password"]:hover {
+  border: 1px solid #0da3d6;
 }
 
 
+}
+
+@media only screen and (min-width:1050px){
+  #login-page{
+    background: #efefef;
+    font-family: 'Open Sans', sans-serif;
+    height:auto;
+  }
+  .login{
+      text-align: center;
+      padding:8vh 0px;
+      margin:10vh auto;
+      box-shadow:0 4px 8px 0 rgba(0, 0, 0, .5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+      background-color:white;
+  }
+  
+  .login h2{
+    color: #111;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: bold;
+    font-size: 2.6rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  button{
+    border-radius:2px;
+  }
+  .login form div{
+      margin:4vh;
+  }
+  
+  #login-btn a:hover{
+    background-color:#6D7781;
+  }
+  #login-btn a{
+    border-radius:4px;
+    background-color: #0da3d6;
+    margin-top:5px;
+    padding:10px 8vw;
+    width:100%;
+    
+    color:#efefef;
+    text-transform: uppercase;
+    letter-spacing:2px;
+  }
+  .login input[type="text"], [type="password"] {
+    
+    width: 100%; /* Full width */
+    padding:8px; /* Some padding */
+    margin:5px auto;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    background:transparent;
+      border: 1px solid rgb(90, 89, 89);
+      color:rgb(49, 49, 49);
+      font-size: 16px;
+  }
+  #sgup a{
+       padding-left: 10px;
+       color:#0da3d6;
+       text-decoration: underline;
+   }
+   #sgup a:hover{
+    color:#6D7781;
+   }
+   .login input[type=text]:hover,input[type="password"]:hover {
+    border: 1px solid #0da3d6;
+  }
+  
+}

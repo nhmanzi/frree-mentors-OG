@@ -36,14 +36,20 @@
       <main class="main-sign " >
 
 <div class="separator"></div>
+<div class="rectangles">
+    <div class="rectangle1"></div>
+    <div class="rectangle2"></div>
+    <div class="rectangle3"></div>
+    <div class="rectangle4"></div>
+</div>
 <div class="form-sign to-center ">
         <form class="to-center">
-                <div class="signup-title to-center">
-                    <label>Sign Up</label>
-                </div>
+                
             
             <div class="box">
-
+                <div class="signup-title to-center">
+                    <label>Create Account</label>
+                </div>
                 <input type="text" placeholder="First Name" name="firstName"   required>
                 <br />
 
@@ -55,19 +61,29 @@
                 <input type="text" placeholder="address" name="address"   required>
                 <br />
                 <textarea name=bio placeholder="bio" height="30px"></textarea>
-                <input type="text" placeholder="occupation" name="occupation"  required>                
+              <input type="text" placeholder="occupation" name="occupation"  required>                
                 <br />
-                <input type="text" placeholder="expertise" name="expertise"   required>
-                <br />
+        <!--         <input type="text" placeholder="expertise" name="expertise"   required>
+                <br /> --->
                 <input type="password" placeholder="Password" id="password" required>
                 <br />
+                <div class="user">
                  <span>mentor<input type="radio"  id="mentor"  required></span>
                 <span>mentee<input type="radio"  id="mentee" checked ="checked" required></span>
-                <p>
-                 By clicking sign up, you agree to our <a href="#">Terms</a> and <a href="#">conditions</a>
-                 </p>
+            </div>
+              <!--    <p>
+               By clicking sign up, you agree to our <a href="#">Terms</a> and <a href="#">conditions</a>
+                 </p> -->
                  <br/>
-                 <a href="login.html" class="btn-sgn" id="gray">Sign Me Up</a>
+                 <button class="to-center btn-sgn">
+                 <a href="login.html" >Sign Me Up</a>
+                </button>
+                 <div class="sign-in to-center">Already A Member?</div>
+
+
+                 <button class="to-center btn-sgn "id="gray">
+                     <a href="login.html">Sign In</a>
+                 </button>
                 
             </div>
 
@@ -75,17 +91,13 @@
 
 
         </form>
-        <div class="sign-in to-center">Already A Member?</div>
-
-
-        <button class="to-center btn-sgn">
-            <a href="login.html">Sign In</a>
-        </button>
+      
     </div>
 
     </main>
 
 </div>
+<div class="separate4"></div>
 <footer class="footer">free mentors @ 2019 </footer>
 
 <script src="../script/scrpit.js"></script>

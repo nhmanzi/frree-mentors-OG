@@ -24,3 +24,21 @@ screen.classList.toggle('screenDisplay');
 }
 slideNav();
 
+ $ = function(id) {
+  return document.getElementById(id);
+}
+
+var show = function(id) {
+    $(id).style.display ='block';
+}
+var hide = function(id) {
+    $(id).style.display ='none';
+}
+
+
+const toggle = () => {
+    let request= document.getElementById(session).innerHTML;
+    request.style.backgroundcolor('red');
+}
+
+toggle();
